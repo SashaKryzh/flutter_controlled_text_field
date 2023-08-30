@@ -1,0 +1,1 @@
+const kInitialValue = 'Initial value';
