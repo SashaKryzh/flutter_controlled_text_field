@@ -16,9 +16,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (_) => PageNotifier(),
-      child: const MaterialApp(
+      child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Home(),
+        theme: ThemeData.light(useMaterial3: true),
+        home: const Home(),
       ),
     );
   }
